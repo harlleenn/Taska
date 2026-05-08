@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export default function Todo() {
+export default function Todo({ handleModal }) {
   return (
-    <div>
-        <h1>Todo whole line plus add and then should be able to show neech</h1>
+    <div className="bg-slate-200 w-full rounded-2xl ">
+      <div className="flex justify-between p-2 ">
+        Todo
+        <button onClick={handleModal}>Add button</button>
+      </div>
     </div>
-  )
+  );
 }
